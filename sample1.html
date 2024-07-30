@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Detection Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Threat Detection Dashboard</h1>
+            <p>Predict and prevent cyberattacks by analyzing network traffic.</p>
+        </header>
+        
+        <div class="main-content">
+            <section class="network-traffic">
+                <h2>Network Traffic Overview</h2>
+                <div class="traffic-info">
+                    <div class="info-card">
+                        <h3>Total Traffic</h3>
+                        <p id="total-traffic">1,500,000 MB</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Suspicious Activity</h3>
+                        <p id="suspicious-activity">120 Alerts</p>
+                    </div>
+                </div>
+                <canvas id="trafficChart"></canvas>
+            </section>
+            
+            <section class="threats">
+                <h2>Potential Threats</h2>
+                <ul id="threat-list">
+                    <li>Threat 1: DDoS Attack</li>
+                    <li>Threat 2: Malware Attempt</li>
+                    <li>Threat 3: Unauthorized Access</li>
+                </ul>
+            </section>
+            
+            <section class="vulnerabilities">
+                <h2>Vulnerabilities Detected</h2>
+                <ul id="vulnerability-list">
+                    <li>Vulnerability 1: Open Ports</li>
+                    <li>Vulnerability 2: Outdated Software</li>
+                    <li>Vulnerability 3: Weak Passwords</li>
+                </ul>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Threat Detection Inc. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
